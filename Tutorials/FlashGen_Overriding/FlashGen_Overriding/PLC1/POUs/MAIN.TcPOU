@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
+  <POU Name="MAIN" Id="{57c01a93-3895-4d9a-9dcf-0f794e9f7a6a}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	// Instance of Generator 1
+	fbGenerator1 :FB_Generator;	
+	// Instance of Generator 2
+	fbGenerator2 :FB_GeneratorEX;	
+	
+	// Status of flasher 1
+	Flasher1: BOOL;
+	// Status of flasher 2
+	Flasher2: BOOL;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[// Set the cycletime property for the class
+fbGenerator1.Cycletime := T#2S;
+fbGenerator2.Cycletime := T#2S;
+
+// Call the flasher method
+Flasher1 := fbGenerator1.Flash();
+Flasher2 := fbGenerator2.Flash();
+
+]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="18" Count="0" />
+      <LineId Id="2" Count="0" />
+      <LineId Id="11" Count="0" />
+      <LineId Id="19" Count="0" />
+      <LineId Id="13" Count="0" />
+      <LineId Id="12" Count="0" />
+      <LineId Id="16" Count="0" />
+      <LineId Id="14" Count="0" />
+      <LineId Id="10" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
+  <POU Name="FB_Generator" Id="{24a43d9d-dd7b-41fd-9822-cc2287b75bcc}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Generator
+VAR_INPUT
+END_VAR
+VAR_OUTPUT
+END_VAR
+VAR
+	// instance variables
+	fbTon1		: TON;	
+	tCycletime	: TIME:=T#1S;
+	bToggle		: BOOL;
+
+	
+	fbTp1		: TP;		
+	tPulsetime	: TIME := T#800MS;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+    <Property Name="Cycletime" Id="{28efd41d-4de4-4a81-af2b-845e86aa7a75}">
+      <Declaration><![CDATA[PROPERTY Cycletime : TIME]]></Declaration>
+      <Get Name="Get" Id="{8f5d3b2b-0044-406b-b6fd-bb47940baec8}">
+        <Declaration><![CDATA[
+VAR
+END_VAR
+]]></Declaration>
+        <Implementation>
+          <ST><![CDATA[Cycletime := this^.tCycletime;]]></ST>
+        </Implementation>
+      </Get>
+      <Set Name="Set" Id="{ddf781d1-835a-41ee-afd8-d5276132b0da}">
+        <Declaration><![CDATA[VAR
+END_VAR
+]]></Declaration>
+        <Implementation>
+          <ST><![CDATA[(*Limit Input Value *)
+IF Cycletime < T#50MS THEN
+	tCycletime := T#50MS;
+ELSIF Cycletime > T#5S THEN
+	tCycletime := T#5S;
+ELSE	
+	tCycletime := Cycletime;
+END_IF
+]]></ST>
+        </Implementation>
+      </Set>
+    </Property>
+    <Method Name="Flash" Id="{214c2423-b1b4-4b14-bbd4-9bbe6a541002}">
+      <Declaration><![CDATA[METHOD Flash : BOOL
+VAR_INPUT
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[fbTon1(IN:= NOT fbTon1.Q , PT:=THIS^.tCycletime , Q=> , ET=> );
+IF fbTon1.Q THEN
+	bToggle:= NOT bToggle;
+END_IF
+Flash:= bToggle;]]></ST>
+      </Implementation>
+    </Method>
+    <Method Name="Pulse" Id="{8c972a96-a0bf-4042-a12d-e5286d30812f}">
+      <Declaration><![CDATA[METHOD Pulse : BOOL
+VAR_INPUT
+	bTriggPuls: BOOL;
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[fbTp1(IN:=bTriggPuls , PT:=this^.tPulsetime , Q=>Pulse , ET=> );]]></ST>
+      </Implementation>
+    </Method>
+    <Property Name="Vendor" Id="{c6dda2ec-51a2-4469-afe7-640de58907fd}">
+      <Declaration><![CDATA[PROPERTY Vendor : STRING]]></Declaration>
+      <Get Name="Get" Id="{40d32773-b1f0-47e4-b2b7-a44cbfc9c893}">
+        <Declaration><![CDATA[VAR
+END_VAR
+]]></Declaration>
+        <Implementation>
+          <ST><![CDATA[Vendor := 'Training';]]></ST>
+        </Implementation>
+      </Get>
+    </Property>
+    <ObjectProperties>
+      <XmlArchive>
+        <Data>
+          <o xml:space="preserve" t="UMLStereoTypeContainerObject">
+            <v n="IsType" t="UMLType">BaseArea</v>
+            <v n="Stereotype">""</v>
+            <d n="Stereotypes" t="Hashtable" />
+          </o>
+        </Data>
+        <TypeList>
+          <Type n="Hashtable">System.Collections.Hashtable</Type>
+          <Type n="String">System.String</Type>
+          <Type n="UMLStereoTypeContainerObject">{30250973-b110-4e31-b562-c102e042dca4}</Type>
+          <Type n="UMLType">{0197b136-405a-42ee-bb27-fd08b621d0cf}</Type>
+        </TypeList>
+      </XmlArchive>
+    </ObjectProperties>
+    <LineIds Name="FB_Generator">
+      <LineId Id="2" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_Generator.Cycletime.Get">
+      <LineId Id="2" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_Generator.Cycletime.Set">
+      <LineId Id="3" Count="7" />
+      <LineId Id="2" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_Generator.Flash">
+      <LineId Id="3" Count="3" />
+      <LineId Id="2" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_Generator.Pulse">
+      <LineId Id="2" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_Generator.Vendor.Get">
+      <LineId Id="2" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
