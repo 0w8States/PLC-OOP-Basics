@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
+  <Itf Name="I_Room" Id="{96edd71b-c2e1-42a5-bf01-8dce7dc03b64}">
+    <Declaration><![CDATA[INTERFACE I_Room
+]]></Declaration>
+    <Method Name="AddLamp" Id="{467719ce-fbe3-445d-a935-78cc03973ab7}">
+      <Declaration><![CDATA[METHOD AddLamp : BOOL
+VAR_INPUT
+	// Lamp interface
+	iLamp : I_Lamp;
+END_VAR
+]]></Declaration>
+    </Method>
+    <Method Name="Control" Id="{af852807-3920-4bef-b62a-b12783c6c903}">
+      <Declaration><![CDATA[METHOD Control : BOOL
+VAR_INPUT
+	// Motion Sensor for the room
+	bMotionSensor : BOOL;
+END_VAR
+]]></Declaration>
+    </Method>
+    <Method Name="RemoveLamp" Id="{8755f431-e167-49fd-854b-a3fb75e41f8f}">
+      <Declaration><![CDATA[METHOD RemoveLamp : BOOL
+VAR_INPUT
+	// Lamp interface
+	iLamp : I_Lamp;
+END_VAR
+]]></Declaration>
+    </Method>
+  </Itf>
+</TcPlcObject>

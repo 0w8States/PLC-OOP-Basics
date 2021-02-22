@@ -1,0 +1,2276 @@
+<?xml version="1.0"?>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.12" ClassName="CNestedPlcProjDef">
+	<Project GUID="{601BEA7D-1EF6-437D-9D9F-AEC2680D5276}" Name="PLC1" PrjFilePath="..\..\PLC1\PLC1.plcproj" TmcFilePath="..\..\PLC1\PLC1.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
+		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="PLC1\PLC1.tmc">
+			<Name>PLC1 Instance</Name>
+			<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
+			<Vars VarGrpType="2" AreaNo="1">
+				<Name>PlcTask Outputs</Name>
+				<Var>
+					<Name>MAIN.fbDimm[0].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[1].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[2].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[3].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[4].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[5].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[6].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[7].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[8].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[9].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[10].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[11].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[12].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[13].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[14].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[15].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[16].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[17].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[18].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[19].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[20].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[21].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[22].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[23].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[24].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[25].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[26].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[27].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[28].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[29].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[30].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[31].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[32].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[33].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[34].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[35].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[36].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[37].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[38].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[39].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[40].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[41].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[42].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[43].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[44].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[45].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[46].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[47].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[48].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[49].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[50].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[51].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[52].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[53].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[54].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[55].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[56].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[57].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[58].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[59].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[60].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[61].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[62].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[63].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[64].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[65].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[66].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[67].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[68].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[69].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[70].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[71].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[72].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[73].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[74].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[75].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[76].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[77].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[78].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[79].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[80].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[81].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[82].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[83].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[84].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[85].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[86].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[87].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[88].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[89].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[90].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[91].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[92].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[93].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[94].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[95].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[96].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[97].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[98].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[99].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[100].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[101].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[102].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[103].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[104].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[105].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[106].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[107].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[108].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[109].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[110].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[111].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[112].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[113].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[114].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[115].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[116].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[117].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[118].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[119].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[120].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[121].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[122].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[123].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[124].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[125].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[126].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[127].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[128].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[129].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[130].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[131].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[132].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[133].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[134].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[135].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[136].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[137].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[138].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[139].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[140].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[141].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[142].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[143].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[144].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[145].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[146].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[147].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[148].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[149].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[150].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[151].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[152].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[153].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[154].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[155].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[156].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[157].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[158].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[159].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[160].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[161].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[162].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[163].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[164].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[165].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[166].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[167].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[168].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[169].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[170].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[171].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[172].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[173].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[174].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[175].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[176].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[177].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[178].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[179].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[180].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[181].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[182].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[183].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[184].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[185].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[186].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[187].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[188].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[189].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[190].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[191].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[192].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[193].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[194].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[195].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[196].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[197].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[198].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[199].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[200].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[201].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[202].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[203].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[204].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[205].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[206].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[207].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[208].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[209].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[210].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[211].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[212].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[213].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[214].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[215].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[216].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[217].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[218].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[219].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[220].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[221].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[222].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[223].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[224].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[225].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[226].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[227].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[228].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[229].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[230].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[231].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[232].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[233].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[234].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[235].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[236].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[237].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[238].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[239].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[240].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[241].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[242].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[243].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[244].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[245].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[246].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[247].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[248].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[249].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[0].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[1].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[2].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[3].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[4].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[5].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[6].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[7].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[8].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[9].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[10].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[11].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[12].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[13].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[14].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[15].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[16].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[17].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[18].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[19].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[20].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[21].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[22].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[23].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[24].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[25].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[26].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[27].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[28].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[29].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[30].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[31].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[32].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[33].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[34].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[35].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[36].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[37].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[38].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[39].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[40].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[41].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[42].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[43].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[44].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[45].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[46].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[47].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[48].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[49].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[50].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[51].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[52].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[53].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[54].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[55].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[56].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[57].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[58].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[59].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[60].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[61].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[62].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[63].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[64].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[65].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[66].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[67].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[68].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[69].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[70].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[71].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[72].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[73].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[74].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[75].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[76].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[77].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[78].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[79].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[80].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[81].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[82].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[83].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[84].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[85].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[86].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[87].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[88].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[89].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[90].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[91].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[92].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[93].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[94].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[95].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[96].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[97].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[98].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[99].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[100].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[101].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[102].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[103].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[104].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[105].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[106].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[107].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[108].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[109].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[110].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[111].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[112].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[113].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[114].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[115].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[116].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[117].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[118].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[119].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[120].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[121].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[122].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[123].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[124].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[125].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[126].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[127].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[128].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[129].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[130].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[131].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[132].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[133].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[134].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[135].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[136].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[137].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[138].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[139].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[140].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[141].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[142].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[143].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[144].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[145].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[146].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[147].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[148].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[149].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[150].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[151].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[152].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[153].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[154].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[155].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[156].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[157].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[158].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[159].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[160].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[161].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[162].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[163].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[164].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[165].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[166].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[167].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[168].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[169].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[170].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[171].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[172].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[173].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[174].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[175].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[176].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[177].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[178].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[179].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[180].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[181].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[182].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[183].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[184].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[185].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[186].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[187].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[188].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[189].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[190].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[191].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[192].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[193].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[194].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[195].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[196].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[197].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[198].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[199].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[200].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[201].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[202].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[203].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[204].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[205].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[206].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[207].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[208].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[209].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[210].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[211].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[212].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[213].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[214].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[215].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[216].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[217].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[218].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[219].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[220].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[221].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[222].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[223].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[224].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[225].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[226].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[227].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[228].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[229].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[230].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[231].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[232].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[233].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[234].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[235].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[236].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[237].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[238].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[239].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[240].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[241].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[242].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[243].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[244].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[245].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[246].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[247].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[248].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[249].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+			</Vars>
+			<Contexts>
+				<Context>
+					<Id NeedCalleeCall="true">0</Id>
+					<Name>PlcTask</Name>
+					<ManualConfig>
+						<OTCID>#x02010030</OTCID>
+					</ManualConfig>
+					<Priority>20</Priority>
+					<CycleTime>10000000</CycleTime>
+				</Context>
+			</Contexts>
+			<TaskPouOids>
+				<TaskPouOid Prio="20" OTCID="#x08502001"/>
+			</TaskPouOids>
+		</Instance>
+	</Project>
+</TcSmItem>

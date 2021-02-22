@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
+  <GVL Name="Param" Id="{b9685460-6ce4-4b5a-8e42-d5217ad21500}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL CONSTANT
+	INDEX_START 	: INT := 0;	
+	MAX_DIMM_LAMPS 	: INT := 14;
+	MAX_ONOFF_LAMPS : INT := 14;	
+	MAX_LAMPS		: INT := 29;
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

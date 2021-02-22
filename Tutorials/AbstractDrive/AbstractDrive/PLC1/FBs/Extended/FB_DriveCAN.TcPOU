@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
+  <POU Name="FB_DriveCAN" Id="{f9c6364f-4df9-4b94-af6b-0e9da0626e79}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_DriveCAN EXTENDS FB_DriveBase
+VAR_INPUT
+END_VAR
+VAR_OUTPUT
+END_VAR
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+    <Method Name="Disable" Id="{0725cec4-162a-4e4c-8bb9-5063bf747a27}">
+      <Declaration><![CDATA[METHOD Disable : BOOL
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[]]></ST>
+      </Implementation>
+    </Method>
+    <Method Name="Enable" Id="{651f9e9b-28ad-4e59-91bd-bdb4d3b24d2f}">
+      <Declaration><![CDATA[METHOD Enable : BOOL
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[]]></ST>
+      </Implementation>
+    </Method>
+    <Method Name="MoveToPosition" Id="{c21be33c-c4f2-4da8-835d-7117a3f37cee}">
+      <Declaration><![CDATA[METHOD MoveToPosition : BOOL
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[]]></ST>
+      </Implementation>
+    </Method>
+    <Method Name="Reset" Id="{f6b2a70a-37d6-47c6-a94f-28b2773cb345}">
+      <Declaration><![CDATA[METHOD Reset : BOOL
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[]]></ST>
+      </Implementation>
+    </Method>
+    <LineIds Name="FB_DriveCAN">
+      <LineId Id="9" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_DriveCAN.Disable">
+      <LineId Id="4" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_DriveCAN.Enable">
+      <LineId Id="4" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_DriveCAN.MoveToPosition">
+      <LineId Id="4" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_DriveCAN.Reset">
+      <LineId Id="4" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
+  <POU Name="FB_DriveBase" Id="{4d2f1c8d-895c-418c-8f96-0fabbe561d56}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK ABSTRACT FB_DriveBase IMPLEMENTS I_DriveBase
+VAR
+	lrMax : LREAL;
+	lrMin : LREAL;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+    <Method Name="Disable" Id="{668eefdb-e959-4e3f-9ab3-0785be03ca9c}">
+      <Declaration><![CDATA[METHOD ABSTRACT Disable : BOOL
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[]]></ST>
+      </Implementation>
+    </Method>
+    <Method Name="Enable" Id="{89143ded-6182-4dc9-a443-4edaf6b9890b}">
+      <Declaration><![CDATA[METHOD ABSTRACT Enable : BOOL
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[]]></ST>
+      </Implementation>
+    </Method>
+    <Method Name="MoveToPosition" Id="{097da37f-8ebd-46e9-975d-dfcdce4bea85}">
+      <Declaration><![CDATA[METHOD ABSTRACT MoveToPosition : BOOL
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[]]></ST>
+      </Implementation>
+    </Method>
+    <Method Name="Reset" Id="{c73a9d9b-f580-4808-83bd-dd61e45bd4e2}">
+      <Declaration><![CDATA[METHOD ABSTRACT Reset : BOOL
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[]]></ST>
+      </Implementation>
+    </Method>
+    <Method Name="SetLimits" Id="{ec98029c-30bb-4562-8add-ff055a55188f}">
+      <Declaration><![CDATA[METHOD SetLimits : BOOL
+VAR_INPUT
+	lrMax : LREAL;
+	lrMin : LREAL;
+END_VAR
+
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[THIS^.lrMax := lrMax;
+THIS^.lrMin := lrMin;]]></ST>
+      </Implementation>
+    </Method>
+    <LineIds Name="FB_DriveBase">
+      <LineId Id="9" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_DriveBase.Disable">
+      <LineId Id="4" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_DriveBase.Enable">
+      <LineId Id="4" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_DriveBase.MoveToPosition">
+      <LineId Id="4" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_DriveBase.Reset">
+      <LineId Id="4" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_DriveBase.SetLimits">
+      <LineId Id="4" Count="0" />
+      <LineId Id="11" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

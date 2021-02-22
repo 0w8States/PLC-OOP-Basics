@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
+  <POU Name="FB_ROOM" Id="{5730381b-b9c1-4611-ba78-d6de9c2f1745}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_ROOM IMPLEMENTS I_Room
+VAR
+	// Array of registered lamps
+	iLamps 		: ARRAY[Param.INDEX_START..Param.MAX_LAMPS] OF I_Lamp;
+END_VAR
+
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+    <Method Name="AddLamp" Id="{f3f5ec88-9fa8-443f-a1eb-ca1df337bdeb}">
+      <Declaration><![CDATA[METHOD AddLamp : BOOL
+VAR_INPUT
+	(* Lamp interface*)
+	iLamp	: I_Lamp;
+END_VAR
+
+VAR
+	// Loop Counter
+	nIndex	: INT;
+END_VAR]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[AddLamp := FALSE;
+// Check to see if the reference is valid, if not return immediately
+IF (iLamp = 0) THEN
+	RETURN;
+END_IF
+
+// Is the lamp already registered?
+FOR nIndex := Param.INDEX_START TO Param.MAX_LAMPS DO
+	IF (THIS^.iLamps[nIndex] = iLamp) THEN
+		AddLamp := TRUE;
+		RETURN;
+	END_IF
+END_FOR
+
+// Save it to the array if it's not
+FOR nIndex := Param.INDEX_START TO  Param.MAX_LAMPS DO
+	IF (THIS^.iLamps[nIndex] = 0) THEN
+		THIS^.iLamps[nIndex] := iLamp;
+		AddLamp := TRUE;
+		EXIT;					
+	END_IF
+END_FOR
+]]></ST>
+      </Implementation>
+    </Method>
+    <Method Name="Control" Id="{4a4abe04-5f89-4572-8019-2240322cfc88}">
+      <Declaration><![CDATA[METHOD Control : BOOL
+VAR_INPUT
+	(* Motion Sensor for the room*)
+	bMotionSensor	: BOOL;
+END_VAR
+
+VAR
+	nIndex: INT;
+END_VAR]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[Control := FALSE;
+FOR nIndex := Param.INDEX_START TO  Param.MAX_LAMPS DO
+	IF bMotionSensor AND (THIS^.iLamps[nIndex] <> 0) THEN
+		iLamps[nIndex].ON();
+		Control := TRUE;
+	ELSIF (THIS^.iLamps[nIndex] <> 0) THEN
+		iLamps[nIndex].OFF();
+	END_IF
+END_FOR]]></ST>
+      </Implementation>
+    </Method>
+    <Method Name="FB_exit" Id="{dc28739e-820d-4233-a94e-5d153f890934}">
+      <Declaration><![CDATA[METHOD FB_exit : BOOL
+VAR_INPUT
+	bInCopyCode : BOOL; // if TRUE, the exit method is called for exiting an instance that is copied afterwards (online change).
+END_VAR
+
+VAR
+	nIndex: INT;
+END_VAR]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[FOR nIndex := 1 TO Param.MAX_LAMPS DO
+	iLamps[nIndex] := 16#00;
+END_FOR]]></ST>
+      </Implementation>
+    </Method>
+    <Method Name="RemoveLamp" Id="{28099617-1ec8-42cb-8f5b-89a6d4ec2c8b}">
+      <Declaration><![CDATA[METHOD RemoveLamp : BOOL
+VAR_INPUT
+	(* Lamp interface*)
+	iLamp	: I_Lamp;
+END_VAR
+
+VAR
+	// Loop Counter
+	nIndex	: INT;
+END_VAR]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[RemoveLamp := FALSE;
+
+IF (iLamp = 0) THEN
+	RETURN;
+END_IF
+
+FOR nIndex := Param.INDEX_START TO  Param.MAX_LAMPS DO
+	IF (THIS^.iLamps[nIndex] = iLamp) THEN
+		THIS^.iLamps[nIndex] := 0;
+		RemoveLamp := TRUE;	
+	END_IF
+END_FOR]]></ST>
+      </Implementation>
+    </Method>
+    <LineIds Name="FB_ROOM">
+      <LineId Id="9" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_ROOM.AddLamp">
+      <LineId Id="101" Count="0" />
+      <LineId Id="82" Count="0" />
+      <LineId Id="51" Count="0" />
+      <LineId Id="61" Count="1" />
+      <LineId Id="92" Count="0" />
+      <LineId Id="83" Count="1" />
+      <LineId Id="87" Count="0" />
+      <LineId Id="89" Count="0" />
+      <LineId Id="88" Count="0" />
+      <LineId Id="85" Count="1" />
+      <LineId Id="91" Count="0" />
+      <LineId Id="90" Count="0" />
+      <LineId Id="94" Count="2" />
+      <LineId Id="98" Count="2" />
+      <LineId Id="93" Count="0" />
+      <LineId Id="23" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_ROOM.Control">
+      <LineId Id="29" Count="0" />
+      <LineId Id="17" Count="0" />
+      <LineId Id="24" Count="1" />
+      <LineId Id="28" Count="0" />
+      <LineId Id="26" Count="1" />
+      <LineId Id="19" Count="1" />
+    </LineIds>
+    <LineIds Name="FB_ROOM.FB_exit">
+      <LineId Id="6" Count="2" />
+    </LineIds>
+    <LineIds Name="FB_ROOM.RemoveLamp">
+      <LineId Id="22" Count="1" />
+      <LineId Id="21" Count="0" />
+      <LineId Id="6" Count="1" />
+      <LineId Id="24" Count="0" />
+      <LineId Id="8" Count="4" />
+      <LineId Id="4" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

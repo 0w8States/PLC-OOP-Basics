@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.12" ClassName="CNestedPlcProjDef">
+	<Project GUID="{601BEA7D-1EF6-437D-9D9F-AEC2680D5276}" Name="PLC1" PrjFilePath="..\..\PLC1\PLC1.plcproj" TmcFilePath="..\..\PLC1\PLC1.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
+		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="PLC1\PLC1.tmc">
+			<Name>PLC1 Instance</Name>
+			<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
+			<Vars VarGrpType="2" AreaNo="1">
+				<Name>PlcTask Outputs</Name>
+				<Var>
+					<Name>MAIN.fbDimm[0].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[1].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[2].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[3].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[4].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[5].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[6].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[7].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[8].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[9].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[10].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[11].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[12].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[13].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbDimm[14].iOutHw</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[0].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[1].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[2].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[3].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[4].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[5].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[6].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[7].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[8].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[9].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[10].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[11].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[12].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[13].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.fbOnOff[14].bOutHw</Name>
+					<Comment><![CDATA[ Hardware control variables]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+			</Vars>
+			<Contexts>
+				<Context>
+					<Id NeedCalleeCall="true">0</Id>
+					<Name>PlcTask</Name>
+					<ManualConfig>
+						<OTCID>#x02010030</OTCID>
+					</ManualConfig>
+					<Priority>20</Priority>
+					<CycleTime>10000000</CycleTime>
+				</Context>
+			</Contexts>
+			<TaskPouOids>
+				<TaskPouOid Prio="20" OTCID="#x08502001"/>
+			</TaskPouOids>
+		</Instance>
+	</Project>
+</TcSmItem>

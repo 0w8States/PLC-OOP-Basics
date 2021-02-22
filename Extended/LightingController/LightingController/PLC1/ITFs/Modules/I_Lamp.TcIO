@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
+  <Itf Name="I_Lamp" Id="{c1fa7db6-fec4-4779-b7ef-c861f71734a1}">
+    <Declaration><![CDATA[INTERFACE I_Lamp
+]]></Declaration>
+    <Method Name="OFF" Id="{2f087a49-f443-46af-9c3f-04673690327e}">
+      <Declaration><![CDATA[METHOD OFF : BOOL
+VAR_INPUT
+END_VAR
+]]></Declaration>
+    </Method>
+    <Method Name="ON" Id="{df655b5b-ad68-49fb-8177-b6be19b61dd9}">
+      <Declaration><![CDATA[METHOD ON : BOOL
+VAR_INPUT
+END_VAR
+]]></Declaration>
+    </Method>
+    <Property Name="State" Id="{a4f348b2-bca6-48d1-b3e3-e8a6b0c40800}">
+      <Declaration><![CDATA[PROPERTY State : STRING]]></Declaration>
+      <Get Name="Get" Id="{3b6c637c-65cb-4894-86e9-2372dab49e76}">
+        <Declaration><![CDATA[]]></Declaration>
+      </Get>
+    </Property>
+  </Itf>
+</TcPlcObject>

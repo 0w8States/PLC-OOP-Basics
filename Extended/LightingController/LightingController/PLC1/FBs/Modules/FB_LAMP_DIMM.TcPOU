@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
+  <POU Name="FB_LAMP_DIMM" Id="{ef4dfccf-13f0-4f5d-beae-8fa75d59aa89}" SpecialFunc="None">
+    <Declaration><![CDATA[{attribute 'reflection'} 
+FUNCTION_BLOCK FB_LAMP_DIMM IMPLEMENTS I_Lamp
+VAR
+	// Hardware control variables
+	fOut : REAL;
+	fInc : REAL:=0.5;
+	iOutHw AT %Q*:INT;
+	
+	// Instance-path variable
+    {attribute 'instance-path'} 
+    {attribute 'noinit'} 
+    sPath : STRING; 
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+    <Method Name="OFF" Id="{d33db4ea-238d-4d07-87b3-d7935e3aff2e}">
+      <Declaration><![CDATA[METHOD OFF : BOOL
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[// Intensity in 0..100% variable fOut
+fOut := fOut - fInc;
+IF fOut < 0.0 THEN
+	fOut := 0.0;
+END_IF
+
+// Conversion to hardware output 0..32767
+iOutHw := LIMIT(0,REAL_TO_INT(fOut * 327.67), 32767);]]></ST>
+      </Implementation>
+    </Method>
+    <Method Name="ON" Id="{a36d9568-8c93-4146-8db2-1a2fa228ca51}">
+      <Declaration><![CDATA[METHOD ON : BOOL
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[// Intensity in 0..100% variable fOut
+fOut := fOut + fInc;
+IF fOut > 100.0 THEN
+	fOut := 100.0;
+END_IF
+
+// Conversion to hardware output 0..32767
+iOutHw := LIMIT(0,REAL_TO_INT(fOut * 327.67), 32767);]]></ST>
+      </Implementation>
+    </Method>
+    <Property Name="State" Id="{2e19e7c6-c212-489b-950d-b13dc8ea6993}">
+      <Declaration><![CDATA[PROPERTY State : STRING
+]]></Declaration>
+      <Get Name="Get" Id="{b2b03c34-15f8-4434-8832-2387ec358a41}">
+        <Declaration><![CDATA[VAR
+END_VAR
+]]></Declaration>
+        <Implementation>
+          <ST><![CDATA[State := CONCAT('Object: ', sPath);
+State := CONCAT(State, ' State (%):');
+State := CONCAT(State, REAL_TO_STRING(THIS^.fOut));]]></ST>
+        </Implementation>
+      </Get>
+    </Property>
+    <LineIds Name="FB_LAMP_DIMM">
+      <LineId Id="9" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_LAMP_DIMM.OFF">
+      <LineId Id="4" Count="4" />
+      <LineId Id="10" Count="0" />
+      <LineId Id="9" Count="0" />
+      <LineId Id="11" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_LAMP_DIMM.ON">
+      <LineId Id="5" Count="6" />
+      <LineId Id="4" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_LAMP_DIMM.State.Get">
+      <LineId Id="5" Count="1" />
+      <LineId Id="2" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

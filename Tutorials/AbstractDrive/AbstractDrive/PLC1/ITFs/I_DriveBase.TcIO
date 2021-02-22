@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
+  <Itf Name="I_DriveBase" Id="{886f5d04-0ec8-4cd1-9363-b14af6363019}">
+    <Declaration><![CDATA[INTERFACE I_DriveBase
+]]></Declaration>
+    <Method Name="Disable" Id="{7e7f4e40-5ef6-4a12-b835-d80ce23161e3}">
+      <Declaration><![CDATA[METHOD Disable : BOOL
+VAR_INPUT
+END_VAR
+]]></Declaration>
+    </Method>
+    <Method Name="Enable" Id="{8cbcfc09-7e7c-4e89-807d-7ff71854aff4}">
+      <Declaration><![CDATA[METHOD Enable : BOOL
+VAR_INPUT
+END_VAR
+]]></Declaration>
+    </Method>
+    <Method Name="MoveToPosition" Id="{c36fdc49-e75b-481c-a64e-7affb39df48a}">
+      <Declaration><![CDATA[METHOD MoveToPosition : BOOL
+VAR_INPUT
+END_VAR
+]]></Declaration>
+    </Method>
+    <Method Name="Reset" Id="{0b55718a-11ea-4c21-8561-bbecf96b2d81}">
+      <Declaration><![CDATA[METHOD Reset : BOOL
+VAR_INPUT
+END_VAR
+]]></Declaration>
+    </Method>
+    <Method Name="SetLimits" Id="{da0762e5-e70b-4d05-9327-df0339cf5736}">
+      <Declaration><![CDATA[METHOD SetLimits : BOOL
+VAR_INPUT
+	lrMax : LREAL;
+	lrMin : LREAL;
+END_VAR
+]]></Declaration>
+    </Method>
+  </Itf>
+</TcPlcObject>

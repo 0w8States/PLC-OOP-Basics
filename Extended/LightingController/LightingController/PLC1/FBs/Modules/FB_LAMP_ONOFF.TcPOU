@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
+  <POU Name="FB_LAMP_ONOFF" Id="{aa995fee-1421-4b66-801f-824f527031c6}" SpecialFunc="None">
+    <Declaration><![CDATA[{attribute 'reflection'} 
+FUNCTION_BLOCK FB_LAMP_ONOFF IMPLEMENTS I_Lamp
+VAR	
+	// Hardware control variables
+	bOutHw AT %Q*:BOOL;
+	
+	// Instance-path variable
+    {attribute 'instance-path'} 
+    {attribute 'noinit'} 
+    sPath : STRING; 
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+    <Method Name="OFF" Id="{604fc7c4-a3e8-4532-885f-37030c4716a7}">
+      <Declaration><![CDATA[METHOD OFF : BOOL
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[bOutHw := FALSE;]]></ST>
+      </Implementation>
+    </Method>
+    <Method Name="ON" Id="{bab13569-3551-452d-8fd5-968e8f0ea75b}">
+      <Declaration><![CDATA[METHOD ON : BOOL
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[bOutHw := TRUE;]]></ST>
+      </Implementation>
+    </Method>
+    <Property Name="State" Id="{c6c150c1-88e5-42cd-91a3-2cbe3b0c34c9}">
+      <Declaration><![CDATA[PROPERTY State : STRING
+]]></Declaration>
+      <Get Name="Get" Id="{7331da31-b73b-4569-afea-cbe7125fd6f3}">
+        <Declaration><![CDATA[VAR
+END_VAR
+]]></Declaration>
+        <Implementation>
+          <ST><![CDATA[State := CONCAT('Object: ', sPath);
+State := CONCAT(State, ' State:');
+State := CONCAT(State, BOOL_TO_STRING(THIS^.bOutHw));]]></ST>
+        </Implementation>
+      </Get>
+    </Property>
+    <LineIds Name="FB_LAMP_ONOFF">
+      <LineId Id="9" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_LAMP_ONOFF.OFF">
+      <LineId Id="4" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_LAMP_ONOFF.ON">
+      <LineId Id="4" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_LAMP_ONOFF.State.Get">
+      <LineId Id="2" Count="0" />
+      <LineId Id="5" Count="1" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
+  <POU Name="MAIN" Id="{0ddc26d6-86f9-4c1c-a4d5-6fbbe034d1d7}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	fbDriveNc 	: FB_DriveNC;
+	fbDriveCan	: FB_DriveCAN;
+	iDrive		: I_DriveBase := fbDriveNc;
+	
+	// Drive Swap Control
+	bNcDrive: BOOL;
+	bCANDrive: BOOL;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[IF bNcDrive THEN
+	bNcDrive := FALSE;
+	iDrive := fbDriveNc;
+END_IF
+
+IF bCANDrive THEN
+	bCANDrive := FALSE;
+	iDrive := fbDriveCan;
+END_IF
+
+
+iDrive.Enable();
+]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="18" Count="0" />
+      <LineId Id="23" Count="1" />
+      <LineId Id="21" Count="0" />
+      <LineId Id="25" Count="0" />
+      <LineId Id="27" Count="3" />
+      <LineId Id="26" Count="0" />
+      <LineId Id="19" Count="0" />
+      <LineId Id="2" Count="0" />
+      <LineId Id="11" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

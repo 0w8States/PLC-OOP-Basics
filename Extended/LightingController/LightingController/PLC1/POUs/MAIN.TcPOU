@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
+  <POU Name="MAIN" Id="{ab3558b6-b1e2-469a-874d-4f235a8ae687}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	(* Classes and Interfaces *)
+	fbDimm 	: ARRAY[Param.INDEX_START..Param.MAX_DIMM_LAMPS]  	OF FB_LAMP_DIMM;
+	fbOnOff	: ARRAY[Param.INDEX_START..Param.MAX_ONOFF_LAMPS]  	OF FB_LAMP_ONOFF;	
+	iLamp 	: ARRAY[Param.INDEX_START..Param.MAX_LAMPS] 		OF I_Lamp;
+	fbRoom : FB_ROOM;
+
+	(* Control Bits *)
+	bDayMode: BOOL;
+	bSensor: BOOL;
+	
+	(* Program Variables *)
+	nIndex: INT;
+	bInit: BOOL;
+	nIndexOffset: INT;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[// Initialize the array of interfaces
+IF NOT bInit THEN
+	// Dimmable lamps first	
+	FOR nIndex := Param.INDEX_START TO Param.MAX_DIMM_LAMPS DO
+		iLamp[nIndex] := fbDimm[nIndex];
+	END_FOR
+	
+	nIndexOffset := Param.MAX_DIMM_LAMPS + 1;
+	// On/Off lamps are next
+	FOR nIndex := nIndexOffset TO Param.MAX_LAMPS DO
+		iLamp[nIndex] := fbOnOff[nIndex - nIndexOffset];
+	END_FOR
+	bInit := TRUE;
+END_IF
+
+// Operating in daytime vs nighttime
+IF bDayMode THEN
+	FOR nIndex := Param.INDEX_START TO Param.MAX_LAMPS BY 2 DO
+		fbRoom.RemoveLamp(iLamp := iLamp[nIndex]);
+	END_FOR
+ELSE
+	FOR nIndex := Param.INDEX_START TO Param.MAX_LAMPS DO
+		fbRoom.AddLamp(iLamp := iLamp[nIndex]);
+	END_FOR
+END_IF
+
+// Turn on and off the lights based on a sensor
+fbRoom.Control(bMotionSensor := bSensor );
+]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="100" Count="5" />
+      <LineId Id="156" Count="1" />
+      <LineId Id="106" Count="19" />
+      <LineId Id="20" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
