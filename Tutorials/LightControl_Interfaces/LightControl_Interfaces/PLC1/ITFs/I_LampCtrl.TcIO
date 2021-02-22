@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
+  <Itf Name="I_LampCtrl" Id="{aa66a24f-fc99-4589-ba32-3a83526bd01b}">
+    <Declaration><![CDATA[INTERFACE I_LampCtrl
+]]></Declaration>
+    <Method Name="OFF" Id="{6928b3c4-a764-4b4d-a0d3-428b9c9a2c5b}">
+      <Declaration><![CDATA[METHOD OFF : BOOL
+]]></Declaration>
+    </Method>
+    <Method Name="ON" Id="{9642ddf5-d91c-422e-b5be-0c7f53d3ab3d}">
+      <Declaration><![CDATA[METHOD ON : BOOL
+]]></Declaration>
+    </Method>
+    <Property Name="State" Id="{8895653f-91e9-4f01-805e-7e753db19c5d}">
+      <Declaration><![CDATA[PROPERTY State : STRING]]></Declaration>
+      <Get Name="Get" Id="{480ed50a-029a-4f43-981b-1d8b17b6d8f1}">
+        <Declaration><![CDATA[]]></Declaration>
+      </Get>
+    </Property>
+    <ObjectProperties>
+      <XmlArchive>
+        <Data>
+          <o xml:space="preserve" t="UMLStereoTypeContainerObject">
+            <v n="IsType" t="UMLType">BaseArea</v>
+            <v n="Stereotype">""</v>
+            <d n="Stereotypes" t="Hashtable" />
+          </o>
+        </Data>
+        <TypeList>
+          <Type n="Hashtable">System.Collections.Hashtable</Type>
+          <Type n="String">System.String</Type>
+          <Type n="UMLStereoTypeContainerObject">{30250973-b110-4e31-b562-c102e042dca4}</Type>
+          <Type n="UMLType">{0197b136-405a-42ee-bb27-fd08b621d0cf}</Type>
+        </TypeList>
+      </XmlArchive>
+    </ObjectProperties>
+  </Itf>
+</TcPlcObject>

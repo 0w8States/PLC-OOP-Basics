@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
+  <POU Name="FB_LAMP_ONOFF" Id="{fc9c48f3-88f3-489b-8472-608355381137}" SpecialFunc="None">
+    <Declaration><![CDATA[{attribute 'reflection'}
+FUNCTION_BLOCK FB_LAMP_ONOFF IMPLEMENTS I_LampCtrl
+VAR_INPUT
+END_VAR
+VAR_OUTPUT
+END_VAR
+VAR
+	bOutHw AT%Q*:BOOL;
+	
+	{attribute 'instance-path'}
+	{attribute 'no_init'}
+	sPath: STRING;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+    <Method Name="OFF" Id="{b1a6d16c-153d-4d3c-9da5-1782b8fd09df}">
+      <Declaration><![CDATA[METHOD OFF : BOOL
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[// implementation switch Lamp off
+OFF := FALSE;
+
+bOutHw := FALSE;
+OFF := TRUE;]]></ST>
+      </Implementation>
+    </Method>
+    <Method Name="ON" Id="{152424dd-61ed-47da-a47f-71e6148aa2de}">
+      <Declaration><![CDATA[METHOD ON : BOOL
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[// implementation switch Lamp on
+ON := FALSE;
+
+bOutHw := TRUE;
+ON := TRUE;]]></ST>
+      </Implementation>
+    </Method>
+    <Property Name="State" Id="{f979ff0a-1114-4932-8462-5a54459d93d7}">
+      <Declaration><![CDATA[PROPERTY State : string]]></Declaration>
+      <Get Name="Get" Id="{22c1d537-2444-47be-a1ac-99d419b7026b}">
+        <Declaration><![CDATA[VAR
+END_VAR
+]]></Declaration>
+        <Implementation>
+          <ST><![CDATA[// additional demo pathname of FB
+State := CONCAT('Object: ', sPath); 
+State := CONCAT(State, 'State:'); 
+State := CONCAT(State, BOOL_TO_STRING(bOutHw));
+
+]]></ST>
+        </Implementation>
+      </Get>
+    </Property>
+    <ObjectProperties>
+      <XmlArchive>
+        <Data>
+          <o xml:space="preserve" t="UMLStereoTypeContainerObject">
+            <v n="IsType" t="UMLType">BaseArea</v>
+            <v n="Stereotype">""</v>
+            <d n="Stereotypes" t="Hashtable" />
+          </o>
+        </Data>
+        <TypeList>
+          <Type n="Hashtable">System.Collections.Hashtable</Type>
+          <Type n="String">System.String</Type>
+          <Type n="UMLStereoTypeContainerObject">{30250973-b110-4e31-b562-c102e042dca4}</Type>
+          <Type n="UMLType">{0197b136-405a-42ee-bb27-fd08b621d0cf}</Type>
+        </TypeList>
+      </XmlArchive>
+    </ObjectProperties>
+    <LineIds Name="FB_LAMP_ONOFF">
+      <LineId Id="2" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_LAMP_ONOFF.OFF">
+      <LineId Id="3" Count="0" />
+      <LineId Id="6" Count="1" />
+      <LineId Id="4" Count="0" />
+      <LineId Id="2" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_LAMP_ONOFF.ON">
+      <LineId Id="3" Count="0" />
+      <LineId Id="7" Count="0" />
+      <LineId Id="6" Count="0" />
+      <LineId Id="2" Count="0" />
+      <LineId Id="5" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_LAMP_ONOFF.State.Get">
+      <LineId Id="5" Count="0" />
+      <LineId Id="7" Count="3" />
+      <LineId Id="2" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

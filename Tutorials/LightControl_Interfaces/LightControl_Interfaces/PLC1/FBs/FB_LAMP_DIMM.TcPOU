@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
+  <POU Name="FB_LAMP_DIMM" Id="{3a1eccb9-1d45-4250-a7a3-681ecb969535}" SpecialFunc="None">
+    <Declaration><![CDATA[{attribute 'reflection'}
+FUNCTION_BLOCK FB_LAMP_DIMM IMPLEMENTS I_LampCtrl
+VAR_INPUT
+END_VAR
+VAR_OUTPUT
+END_VAR
+VAR
+	
+	fOut :REAL;
+	fInc :REAL:=0.5;
+	iOutHw AT%Q*:INT; // Output to Dimmer
+	
+	{attribute 'instance-path'}
+	{attribute 'no_init'}
+	sPath: STRING;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+    <Method Name="OFF" Id="{4aa2126f-d62e-44be-9e00-c24d7e832071}">
+      <Declaration><![CDATA[METHOD OFF : BOOL
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[// implementation dimm++. 
+//Intensity in 0..100%  variable fOut 
+fOut :=fOut - fInc;
+IF fOut < 0.0 THEN
+    fOut :=0.0;
+	OFF := TRUE;
+ELSE
+	OFF := FALSE;
+END_IF
+
+// conversion to hardware output 0..32767
+iOutHw := LIMIT (0,REAL_TO_INT(fOut * 32.767),32767); // for dimmer output]]></ST>
+      </Implementation>
+    </Method>
+    <Method Name="ON" Id="{ff6a5352-1f91-4bf4-9a0c-06c368dd320b}">
+      <Declaration><![CDATA[METHOD ON : BOOL
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[// implementation dimm++. 
+//Intensity in 0..100%  variable fOut 
+fOut :=fOut + fInc;
+IF fOut > 100.0 THEN
+    fOut :=100.0;
+	On := TRUE;
+ELSE
+	On := FALSE;
+END_IF
+iOutHw := LIMIT (0,REAL_TO_INT(fOut * 327.67),32767); // for dimmer output
+ ]]></ST>
+      </Implementation>
+    </Method>
+    <Property Name="State" Id="{5ac3d078-2cca-47c3-aad2-7982bc0c6545}">
+      <Declaration><![CDATA[PROPERTY State : string]]></Declaration>
+      <Get Name="Get" Id="{f1143ca4-13ea-4d9b-b180-40fbefa4adc8}">
+        <Declaration><![CDATA[VAR
+END_VAR
+]]></Declaration>
+        <Implementation>
+          <ST><![CDATA[State := CONCAT('Object:', sPath); 
+State := CONCAT(State, 'State (%):'); 
+State := CONCAT(State, REAL_TO_STRING(fOut)); 
+]]></ST>
+        </Implementation>
+      </Get>
+    </Property>
+    <ObjectProperties>
+      <XmlArchive>
+        <Data>
+          <o xml:space="preserve" t="UMLStereoTypeContainerObject">
+            <v n="IsType" t="UMLType">BaseArea</v>
+            <v n="Stereotype">""</v>
+            <d n="Stereotypes" t="Hashtable" />
+          </o>
+        </Data>
+        <TypeList>
+          <Type n="Hashtable">System.Collections.Hashtable</Type>
+          <Type n="String">System.String</Type>
+          <Type n="UMLStereoTypeContainerObject">{30250973-b110-4e31-b562-c102e042dca4}</Type>
+          <Type n="UMLType">{0197b136-405a-42ee-bb27-fd08b621d0cf}</Type>
+        </TypeList>
+      </XmlArchive>
+    </ObjectProperties>
+    <LineIds Name="FB_LAMP_DIMM">
+      <LineId Id="2" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_LAMP_DIMM.OFF">
+      <LineId Id="3" Count="4" />
+      <LineId Id="12" Count="2" />
+      <LineId Id="8" Count="2" />
+      <LineId Id="2" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_LAMP_DIMM.ON">
+      <LineId Id="3" Count="4" />
+      <LineId Id="11" Count="2" />
+      <LineId Id="8" Count="1" />
+      <LineId Id="2" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_LAMP_DIMM.State.Get">
+      <LineId Id="6" Count="2" />
+      <LineId Id="2" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
