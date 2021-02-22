@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
+  <POU Name="MAIN" Id="{df496471-2eed-4c82-abc4-53bb5313bb65}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	// Used to demo ITF reference on start-up
+	fbLamp1 	: FB_LAMP_DIMM;
+	fbLamp2 	: FB_LAMP_ONOFF;
+	
+	
+	// Interface
+	LampCtrl 	: ARRAY[0..1] OF I_LampCtrl := [fbLamp1, fbLamp2];
+	
+	// Program Control
+	bLightsOn	: BOOL;
+	bLightsOff	: BOOL;
+	State		: ARRAY[0..1] OF STRING;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[IF bLightsOn THEN
+	IF LampCtrl[0].ON() AND LampCtrl[1].ON() THEN
+		bLightsOn := FALSE;
+	END_IF
+END_IF
+
+IF bLightsOff THEN	
+	IF LampCtrl[0].OFF() AND LampCtrl[1].OFF() THEN
+		bLightsOff := FALSE;
+	END_IF
+END_IF
+
+State[0] := LampCtrl[0].State;
+State[1] := LampCtrl[1].State;
+]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="53" Count="0" />
+      <LineId Id="67" Count="2" />
+      <LineId Id="57" Count="2" />
+      <LineId Id="70" Count="2" />
+      <LineId Id="63" Count="3" />
+      <LineId Id="33" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
